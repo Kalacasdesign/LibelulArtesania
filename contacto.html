@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/Logo1.png" type="image/x-icon">
+    <!-- fontawesome iconos -->
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.3.0-web/css/all.css">
+    <!-- google fonts tipografia del logo-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <title>Libelula Artesanias</title>
+
+
+
+    <style>
+
+  #contacto form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 77%;
+  margin: auto;
+}
+
+#contacto h3{
+  text-align: center;
+  font-size: 55px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 49%;
+  margin-bottom: 15px;
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid #5cb8ff;
+  font-size: 17px;
+}
+
+textarea {
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid #5cb8ff;
+  font-size: 17px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#contacto input[type="submit"] {
+  width: 166px;
+  margin: auto;
+}
+
+
+
+#whatsapp {
+  position: fixed;
+  top: 80%;
+  right: 1%;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+  <header>
+    <div id="logo">
+      <a href="index.html">
+        <img src="./img/Logo1.png" alt="Libelula artesanias">
+      </a>
+    </div>
+    <div id="nav">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="libelula.html">Libelula</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+   <!-- Hero -->
+   <section id="hero">
+    <h1>Libelula Artesanias</h1>
+    <p>Somos expertos en la creacion de productos personalizados, desde pintorcitos, pasando por todo tipo de arreglos y reparaciones</p>
+    <a href="/servicios" class="btn" style="color:black">Ver servicios</a>
+  </section>
+
+  <!-- Formulario -->
+
+  <section id="contacto">
+   
+    <div class="contenedor">
+      <h3>Contacto</h3>
+      <form action="envio-formulario.php" method="post" enctype="multipart/form-data">
+        <input type="text" placeholder="Nombre" name="nombre" required>
+        <input type="email" placeholder="Email" name="email" required>
+        <textarea placeholder="Mensaje" name="mensaje" required></textarea>
+        <input type="submit" value="ENVIAR MENSAJE">
+      </form>
+    </div>
+  </section>
+    
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="contenedor">
+      <div class="left-column">
+        <img src="./img/Logo1.png" alt="Logo de la empresa" width="150" height="150">
+      </div>
+      <div class="center-column">
+        <h3>Nuestros productos destacados</h3>
+        <ul>
+          <li>Pintorcitos</li>
+          <li>Fundas para cuadernos</li>
+          <li>Delantales de lienzo</li>
+          <li>Cartucheras</li>
+          <li>Porta pinceles</li>
+        </ul>
+      </div>
+      <div class="right-column">
+        <h3>Contacto</h3>
+        <ul>
+          <li>Mail: claudia4705@hotmail.com</li>
+          <li>Tel: 1136825011</li>
+          <li>Ubicacion: Caba , caballito</li>
+        </ul>
+      </div>
+      <div class="social-column">
+        <h3>Encuentrame</h3>
+        <ul class="social-icons">
+        <li><a href="https://www.facebook.com/people/Libelula-Artesanias/100011517483093/?sk=photos" class="fa-brands fa-facebook"></a></li>
+        <li><a href="https://www.instagram.com/libelulasartesanas21/" class="fa-brands fa-instagram"></a></li>
+        <li><a href="https://wa.me/+541136825011"><i class="fa-brands fa-whatsapp"></i></a></li>
+        <li><a href="mailto:claudia4705@hotmail.com"><i class="fa-brands fa-google"></i></a></li>
+      </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

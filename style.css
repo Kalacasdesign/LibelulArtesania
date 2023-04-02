@@ -1,0 +1,359 @@
+#hero, #features, #galeria, #que-esperas,#mi-trabajo, #contacto , #footer {
+  padding: 90px 0;
+}
+
+.contenedor {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+
+h3 {
+  text-align: center;
+  font-size: 55px;
+  font-weight: normal;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6fa55;
+    color: black;
+    padding: 20px;
+    border-radius: 10px 10px 0 0 ;
+  }
+  
+  #logo a {
+    display: block;
+  }
+  
+  #logo img {
+    width: 100px;
+    height: auto;
+  }
+  
+  #nav {
+    display: flex;
+  }
+  
+  #nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #nav li {
+    margin: 0 10px;
+  }
+  
+  #nav a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  #nav a:hover {
+    color: #9BD7D8;
+  }
+
+  /* HERO */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    background-color: #e6fa55;
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% calc(100% - 3rem),
+      0 100%
+      );
+    
+  }
+  #hero h1 {
+    font-size: 3em;
+    margin: 0 0 50px 0;
+   
+  }
+  #hero p {
+    font-size: 1.5em;
+    margin: 10px 0 50px 0;
+    
+
+  }
+  #hero .btn {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  #hero .btn:hover {
+    background-color: #fff;
+    color: #333;
+  }
+
+  /* Sección Columnas (2) */
+#features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+  }
+  #features .contenedor {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #features .left-column {
+    width: 50%;
+    text-align: center;
+  }
+  #features .left-column img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #features .right-column {
+    width: 50%;
+    text-align: left;
+    padding: 0 20px;
+  }
+  #features h2 {
+    font-size: 2em;
+    margin: 0 0 20px;
+  }
+  #features p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0;
+  }
+  #features .btn {
+    display: inline-block;
+    font-size: 1em;
+    padding: 15px 30px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+    margin-top: 30px;
+  }
+  #features .btn:hover {
+    background-color: rgba(155, 215, 216, 0.94);
+    color: #333;
+  }
+
+  /* Galería */
+#galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
+  }
+
+  .mis-productos{
+    width: 80%;
+    height: auto;
+    
+  }
+
+  #galeria h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  #galeria .mis-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    margin: 0 -5px;
+  }
+  #galeria .mis-productos img {
+    width: 25%;
+    height: auto;
+    margin: 0 5px 20px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.2s;
+    padding: 30px;
+  }
+  #galeria .mis-productos img:hover {
+    transform: scale(1.1);
+  }
+
+  /* SECCION QUE ESPERAS */
+
+#que-esperas {
+  background: linear-gradient( rgba(155, 215, 216, 0.94),rgba(230, 250, 85, 0.9));
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 40px;
+}
+
+#que-esperas h3 {
+  font-size: 35px;
+  color: #333;
+  padding: 20px;
+}
+
+#que-esperas a {
+  display: inline-block;
+  font-size: 1em;
+  padding: 15px 30px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+#que-esperas a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* SECCION MI TRABAJO */
+
+#mi-trabajo{
+  background: linear-gradient( rgba(230, 250, 85, 0.9),rgba(155, 215, 216, 0.94));
+  clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% calc(100% - 3rem),
+      0 100%
+      );
+}
+
+.contenedor-trabajar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#mi-trabajo h3{
+  text-align: center;
+  font-size: 55px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+#mi-trabajo .item {
+  width: 28%;
+  text-align: center;
+}
+
+#mi-trabajo ul li {
+  list-style: none;
+}
+
+#mi-trabajo ul li:nth-child(2) {
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#mi-trabajo ul li:nth-child(3) {
+  line-height: 31px;
+}
+
+
+  /* Footer */
+#footer {
+    background-color: rgb(230, 250, 85);
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 0 0 10px 10px;
+  }
+  #footer .contenedor {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #footer h3 {
+    font-size: 1.2em;
+    margin: 20px;
+  }
+  #footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #footer li {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  #footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  #footer a:hover {
+    color: #333;
+  }
+  #footer .fa {
+    font-size: 1.5em;
+    margin: 0 5px;
+  }
+
+  .social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .social-icons li {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-icons li a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.2s;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(155, 215, 216);
+    text-align: center;
+    line-height: 40px;
+  }
+  
+  .social-icons li a:hover {
+    background-color: #fee2ea;
+    color: #fff;
+  }
+
+
+
+      
+
+
+
+
+  
