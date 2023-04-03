@@ -1,0 +1,40 @@
+#mi-trabajo{
+    background: linear-gradient( rgba(230, 250, 85, 0.9),rgba(155, 215, 216, 0.94));
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% calc(100% - 3rem),
+        0 100%
+        );
+                h3{
+                text-align: center;
+                font-size: 55px;
+                font-weight: normal;
+                margin-bottom: 50px;
+            }
+  
+                .item {
+                    width: 28%;
+                    text-align: center;
+                }
+  
+  ul {
+    li{
+    list-style: none;
+        :nth-child(2) {
+        font-weight: bold;
+        font-size: 19px;
+        margin-top: 5px;
+        margin-bottom: 20px;}
+            :nth-child(3) {
+            line-height: 31px;
+            }
+        }
+    }
+}
+
+  .contenedor-trabajar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
