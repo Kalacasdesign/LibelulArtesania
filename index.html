@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Produccion de materiales de libreria">
+    <meta name="keywords" content="pintorcitos, fundas para cuadernos, delantales de lienzo, cartucheras, porta pinceles">
+    <meta name="author" content="Soldano Nicolas">
+    <meta http-equiv="refresh" content="30">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- SASS -->
@@ -15,31 +19,53 @@
     <!-- google fonts tipografia del logo-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
     
     <title>Libelula Artesanias</title>
 </head>
 <body>
     <!-- Header -->
-  <header>
-    <div id="logo">
-      <a href="index.html">
-        <img src="./img/Logo1.png" alt="Libelula artesanias">
-      </a>
-    </div>
-    <div id="nav">
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="libelula.html">Libelula</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e6fa55;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="./img/Logo1.png" alt="Libelula artesanias" width="150px" height="150px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="libelula.html">Libelula</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Pintorcitos</a></li>
+                  <li><a class="dropdown-item" href="#">Fundas para cuadernos</a></li>
+                  <li><a class="dropdown-item" href="#">Delantales de lienzo</a></li>
+                  <li><a class="dropdown-item" href="#">Cartucheras</a></li>
+                  <li><a class="dropdown-item" href="#">Porta pinceles</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </div>
-  </header>
+    </header>
+  
 
     <!-- Hero -->
     <section id="hero">
@@ -66,27 +92,27 @@
 
   <!--  SECCION MI TRABAJO  -->
 
-  <section id="mi-trabajo">
-    <div class="contenedor">
+  <section id="mi-trabajo" >
+    <div class="text-center pt-5">
       <h3>A que me dedico?</h3>
-      <div class="contenedor-trabajar">
-        <div class="item">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <ul>
-            <li><img src="imagenes/velocidad.png" alt=""></li>
+            <li><img src="imagenes/velocidad.png" alt="Libreria"></li>
             <li>Productos de libreria</li>
             <li>Me aseguro de que tu web cargue entre 2 y 4 segundos (depende de la cantidad de contenido del sitio). Si una web tarda más de 5 segundos en cargar, el 70% de los usuarios lo cierra y no vuelve a entrar más</li>
           </ul>
         </div>
-        <div class="item">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <ul>
-            <li><img src="imagenes/mantenimiento.png" alt=""></li>
+            <li><img src="imagenes/mantenimiento.png" alt="Personalizado"></li>
             <li>Productos a medida</li>
             <li>Mantengo una comunicación constante con mi cliente, para enseñarle a modificar contenido mediante el panel de Wordpress o para cualquier duda/cambio que quiera hacer en su sitio web</li>
           </ul>
         </div>
-        <div class="item">
+        <div class="col-lg-4 col-md-6 col-sm-12">
           <ul>
-            <li><img src="imagenes/mobile2.png" alt=""></li>
+            <li><img src="imagenes/mobile2.png" alt="Arte"></li>
             <li>Productos de arte</li>
             <li>Cada vez mas personas navegan desde sus celulares en cualquier parte del mundo. Me aseguro de que tu web esté optimizada para cualquier tipo de dispositivo móvil</li>
           </ul>
@@ -98,19 +124,33 @@
   
 
   <!-- Galería -->
-  <section id="galeria">
-    <div class="contenedor">
+  <section id="galeria" class="contenedor">
+
+    <div class="text-center pt-5">
       <h3>Mis productos</h3>
     </div>
     
-    <div class="mis-productos">
-      <img src="./img/img1.png" alt="Imagen 1">
-      <img src="./img/img2.jpeg" alt="Imagen 2">
-      <img src="img/img3.jpg" alt="Imagen 3">
-      <img src="img/img8.jpg" alt="Imagen 4">
-      <img src="img/img5.png" alt="Imagen 5">
-      <img src="img/img9.jpeg" alt="Imagen 6">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <img src="./img/img1.png" alt="Galeria de imagenes">
     </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+      <img src="./img/img2.jpeg" alt="Galeria de imagenes">
+    </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+      <img src="img/img3.jpg" alt="Galeria de imagenes">
+    </div>
+     <div class="col-lg-4 col-md-6 col-sm-12">
+      <img src="img/img8.jpg" alt="Galeria de imagenes">
+    </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+      <img src="img/img5.png" alt="Galeria de imagenes">
+    </div>
+     <div class="col-lg-4 col-md-6 col-sm-12">
+      <img src="img/img9.jpeg" alt="Galeria de imagenes">
+    </div>
+    </div>
+
   </section>
  
   <!-- SECCION QUE ESPERAS -->
@@ -159,7 +199,8 @@
   </footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!-- SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 

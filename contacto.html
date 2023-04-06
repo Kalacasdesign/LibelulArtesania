@@ -76,22 +76,43 @@ textarea {
 <body>
     <!-- Header -->
   <header>
-    <div id="logo">
-      <a href="index.html">
-        <img src="./img/Logo1.png" alt="Libelula artesanias">
-      </a>
-    </div>
-    <div id="nav">
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="libelula.html">Libelula</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e6fa55;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./img/Logo1.png" alt="Libelula artesanias" width="150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="libelula.html">Libelula</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Pintorcitos</a></li>
+                <li><a class="dropdown-item" href="#">Fundas para cuadernos</a></li>
+                <li><a class="dropdown-item" href="#">Delantales de lienzo</a></li>
+                <li><a class="dropdown-item" href="#">Cartucheras</a></li>
+                <li><a class="dropdown-item" href="#">Porta pinceles</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
    <!-- Hero -->
@@ -151,6 +172,12 @@ textarea {
       </div>
     </div>
   </footer>
+
+  <!-- SCRIPT -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 
 </body>
 </html>

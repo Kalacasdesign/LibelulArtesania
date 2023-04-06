@@ -26,22 +26,43 @@
 <body>
     <!-- Header -->
   <header>
-    <div id="logo">
-      <a href="index.html">
-        <img src="./img/Logo1.png" alt="Libelula artesanias">
-      </a>
-    </div>
-    <div id="nav">
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="libelula.html">Libelula</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e6fa55;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="./img/Logo1.png" alt="Libelula artesanias" width="150px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="libelula.html">Libelula</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Pintorcitos</a></li>
+                <li><a class="dropdown-item" href="#">Fundas para cuadernos</a></li>
+                <li><a class="dropdown-item" href="#">Delantales de lienzo</a></li>
+                <li><a class="dropdown-item" href="#">Cartucheras</a></li>
+                <li><a class="dropdown-item" href="#">Porta pinceles</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
    <!-- Hero -->
@@ -54,64 +75,87 @@
   </section>
 
 <!-- Galeria -->
-<section id="galeria">
-  <div class="contenedor">
+<section id="galeria" class="contenedor">
+
+  <div class="text-center pt-5">
     <h3>Mis productos</h3>
   </div>
   
-  <div class="mis-productos">
-    <img src="./img/img1.png" alt="Imagen 1">
-    <img src="./img/img2.jpeg" alt="Imagen 2">
-    <img src="img/img3.jpg" alt="Imagen 3">
-    <img src="img/img8.jpg" alt="Imagen 4">
-    <img src="img/img5.png" alt="Imagen 5">
-    <img src="img/img9.jpeg" alt="Imagen 6">
+  <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <img src="./img/img1.png" alt="Galeria de imagenes">
+  </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+    <img src="./img/img2.jpeg" alt="Galeria de imagenes">
+  </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+    <img src="img/img3.jpg" alt="Galeria de imagenes">
+  </div>
+   <div class="col-lg-4 col-md-6 col-sm-12">
+    <img src="img/img8.jpg" alt="Galeria de imagenes">
+  </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+    <img src="img/img5.png" alt="Galeria de imagenes">
+  </div>
+   <div class="col-lg-4 col-md-6 col-sm-12">
+    <img src="img/img9.jpeg" alt="Galeria de imagenes">
+  </div>
   </div>
 
 </section>
 
  <!-- Footer -->
  <footer id="footer">
-    <div class="contenedor">
-      <div class="left-column">
-        <img src="./img/Logo1.png" alt="Logo de la empresa" width="150" height="150">
-      </div>
-      <div class="center-column">
-        <h3>Nuestros productos destacados</h3>
-        <ul>
-          <li>Pintorcitos</li>
-          <li>Fundas para cuadernos</li>
-          <li>Delantales de lienzo</li>
-          <li>Cartucheras</li>
-          <li>Porta pinceles</li>
-        </ul>
-      </div>
-      <div class="right-column">
-        <h3>Contacto</h3>
-        <ul>
-          <li>Mail: claudia4705@hotmail.com</li>
-          <li>Tel: 1136825011</li>
-          <li>Ubicacion: Caba , caballito</li>
-        </ul>
-      </div>
-      <div class="social-column">
-        <h3>Encuentrame</h3>
-        <ul class="social-icons">
-        <li><a href="https://www.facebook.com/people/Libelula-Artesanias/100011517483093/?sk=photos" class="fa-brands fa-facebook"></a></li>
-        <li><a href="https://www.instagram.com/libelulasartesanas21/" class="fa-brands fa-instagram"></a></li>
-        <li><a href="https://wa.me/+541136825011"><i class="fa-brands fa-whatsapp"></i></a></li>
-        <li><a href="mailto:claudia4705@hotmail.com"><i class="fa-brands fa-google"></i></a></li>
-      </ul>
-      </div>
-    </div>
-  </footer>
+  <div class="container-fluid">
 
+   <div class="row p-5 text-black" style="background-color: #e6fa55;">
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+         <div class="col-xs-12 col-md-6 col-lg-3"> 
+             <p class="h3"><img src="./img/Logo1.png" alt="Libelula artesanias" width="150px"></p>
+             <p class="text-secondary">Caba , Caballito</p>
+         </div>
+     
+         <div class="col-xs-12 col-md-6 col-lg-3"> 
+           <h3>Nuestros productos destacados</h3>
+           <ul>
+             <li>Pintorcitos</li>
+             <li>Fundas para cuadernos</li>
+             <li>Delantales de lienzo</li>
+             <li>Cartucheras</li>
+             <li>Porta pinceles</li>
+           </ul>
+             </div>
+         </div>
 
+         <div class="col-xs-12 col-md-6 col-lg-3"> 
+         <h3>Contacto</h3>
+       <ul>
+         <li>Mail: claudia4705@hotmail.com</li>
+         <li>Tel: 1136825011</li>
+         <li>Ubicacion: Caba , caballito</li>
+       </ul>
+       </div>
+
+         <div class="col-xs-12 col-md-6 col-lg-3"> 
+           <p class="h5 mb-3 mt-5">Encuentrame</p>
+           <div class="mb-2">
+                 <ul class="social-icons">
+                 <li><a href="https://www.facebook.com/people/Libelula-Artesanias/100011517483093/?sk=photos" class="fa-brands fa-facebook"></a></li>
+                 <li><a href="https://www.instagram.com/libelulasartesanas21/" class="fa-brands fa-instagram"></a></li>
+                 <li><a href="https://wa.me/+541136825011"><i class="fa-brands fa-whatsapp"></i></a></li>
+                 <li><a href="mailto:claudia4705@hotmail.com"><i class="fa-brands fa-google"></i></a></li>
+               </ul>
+
+           </div>
+       </div>
+   </div>
+  </div>
+ </footer>
+ <!-- SCRIPT -->
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
       
   </body>
 </html>

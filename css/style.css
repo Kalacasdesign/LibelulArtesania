@@ -1,5 +1,5 @@
 #hero, #features, #galeria, #que-esperas,#mi-trabajo, #contacto , #footer {
-  padding: 90px 0;
+  padding: 50px 0 ;
 }
 
 .contenedor {
@@ -13,52 +13,6 @@ h3 {
   font-size: 55px;
   font-weight: normal;
 }
-
-
-/* Header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #e6fa55;
-    color: black;
-    padding: 20px;
-    border-radius: 10px 10px 0 0 ;
-  }
-  
-  #logo a {
-    display: block;
-  }
-  
-  #logo img {
-    width: 100px;
-    height: auto;
-  }
-  
-  #nav {
-    display: flex;
-  }
-  
-  #nav ul {
-    display: flex;
-    list-style: none;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #nav li {
-    margin: 0 10px;
-  }
-  
-  #nav a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  #nav a:hover {
-    color: #9BD7D8;
-  }
 
   /* HERO */
 #hero {
@@ -158,45 +112,19 @@ header {
   }
 
   /* Galería */
-#galeria {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 0 4px;
+  #galeria .col-lg-4{
+    margin:0 !important; 
+    padding: 25px;
   }
 
-  .mis-productos{
-    width: 80%;
-    height: auto;
-    
-  }
-
-  #galeria h3 {
-    text-align: center;
-    font-size: 55px;
-    font-weight: normal;
-    padding: 20px;
-    margin-bottom: 40px;
-  }
-  #galeria .mis-productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    
-    margin: 0 -5px;
-  }
-  #galeria .mis-productos img {
-    width: 25%;
-    height: auto;
-    margin: 0 5px 20px;
-    object-fit: cover;
-    border-radius: 5px;
+  #galeria img{
+    width: 100%;
+    height: 400px;
     transition: transform 0.2s;
-    padding: 30px;
-  }
-  #galeria .mis-productos img:hover {
+}
+
+  #galeria img:hover {
+    border: 5px solid #f7f7f7;
     transform: scale(1.1);
   }
 
@@ -241,6 +169,8 @@ header {
       100% calc(100% - 3rem),
       0 100%
       );
+      margin-top: 20px;
+      padding-top: 10px;
 }
 
 .contenedor-trabajar {
@@ -253,7 +183,7 @@ header {
   text-align: center;
   font-size: 55px;
   font-weight: normal;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 #mi-trabajo .item {
@@ -293,6 +223,16 @@ header {
     max-width: 1200px;
     margin: 0 auto;
   }
+  #footer img{
+    width: 150px;
+    height: 150px;
+    transition: transform 0.2s;
+
+  }
+
+  #footer img:hover {
+    transform: scale(1.1);
+  }
   #footer h3 {
     font-size: 1.2em;
     margin: 20px;
@@ -324,6 +264,7 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
   }
   
   .social-icons li {
@@ -349,7 +290,19 @@ header {
     color: #fff;
   }
 
+ 
 
+  @media screen and (max-width: 600px){
+    .contenedor{
+      flex-direction: column;
+      
+    }
+
+     .contenedor center-column{
+      flex-basis: 100%;
+    }
+
+  }
 
       
 
