@@ -14,6 +14,8 @@ h3 {
   font-weight: normal;
 }
 
+
+
   /* HERO */
 #hero {
     display: flex;
@@ -34,8 +36,11 @@ h3 {
     
   }
   #hero h1 {
-    font-size: 3em;
+    font-size: 8rem;
     margin: 0 0 50px 0;
+    display:inline-block; 
+    animation:headShake;
+    animation-duration: 5s;
    
   }
   #hero p {
@@ -77,7 +82,7 @@ h3 {
     text-align: center;
   }
   #features .left-column img {
-    width: 60%;
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
   }
@@ -85,6 +90,7 @@ h3 {
     width: 50%;
     text-align: left;
     padding: 0 20px;
+    margin: 30px;
   }
   #features h2 {
     font-size: 2em;
@@ -119,7 +125,7 @@ h3 {
 
   #galeria img{
     width: 100%;
-    height: 400px;
+    height: 300px;
     transition: transform 0.2s;
 }
 
@@ -141,6 +147,8 @@ h3 {
   font-size: 35px;
   color: #333;
   padding: 20px;
+  animation: shakeY;
+  animation-duration: 5s;
 }
 
 #que-esperas a {
@@ -217,7 +225,7 @@ h3 {
   }
   #footer .contenedor {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
@@ -226,12 +234,10 @@ h3 {
   #footer img{
     width: 150px;
     height: 150px;
-    transition: transform 0.2s;
-
-  }
-
-  #footer img:hover {
-    transform: scale(1.1);
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: swing;
+    animation-duration: 10s;
   }
   #footer h3 {
     font-size: 1.2em;
@@ -295,12 +301,28 @@ h3 {
   @media screen and (max-width: 600px){
     .contenedor{
       flex-direction: column;
-      
+      justify-content: center;
+      align-items: center;
     }
 
-     .contenedor center-column{
-      flex-basis: 100%;
+    #footer img{
+      margin-left: 150px;
     }
+
+    .social-column{
+      margin-left: 120px;
+    }
+
+    #footer .center-column{
+      margin-left: 70px;
+    }
+
+    #footer .right-column{
+      margin-left: 120px;
+    }
+
+
+
 
   }
 
