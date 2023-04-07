@@ -303,6 +303,7 @@ h3 {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: auto;
     }
 
     #footer img{
@@ -310,15 +311,15 @@ h3 {
     }
 
     .social-column{
-      margin-left: 120px;
+      margin: auto;
     }
 
     #footer .center-column{
-      margin-left: 70px;
+      margin: auto;
     }
 
     #footer .right-column{
-      margin-left: 120px;
+      margin: auto;
     }
 
 

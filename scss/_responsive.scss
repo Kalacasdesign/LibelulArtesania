@@ -1,5 +1,26 @@
 @media screen and (max-width: 600px){
+    .contenedor{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
   
+      #footer img{
+        margin-left: 150px;
+      }
+  
+      .social-column{
+        margin: auto;
+      }
+  
+      #footer .center-column{
+        margin: auto;
+      }
+  
+      #footer .right-column{
+        margin: auto;
+      }
 
 }
 
