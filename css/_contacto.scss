@@ -1,0 +1,45 @@
+#contacto form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+  }
+  
+  #contacto h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+    margin-bottom: 50px;
+  }
+  
+  input[type="text"], input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+  }
+  
+  textarea {
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  
+  #contacto input[type="submit"] {
+    width: 166px;
+    margin: auto;
+  }
+  
+  
+  
+  #whatsapp {
+    position: fixed;
+    top: 80%;
+    right: 1%;
+  }

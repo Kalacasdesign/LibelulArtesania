@@ -1,0 +1,51 @@
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    background-color: #e6fa55;
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% calc(100% - 3rem),
+      0 100%
+      );
+    
+  }
+  #hero h1 {
+    font-size: 4rem;
+    margin: 0 0 50px 0;
+    display:inline-block; 
+    animation:headShake;
+    animation-duration: 5s;
+   
+  }
+  #hero p {
+    font-size: 1.5em;
+    margin: 10px 0 50px 0;
+    
+
+  }
+  #hero .btn {
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  #hero .btn:hover {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .navbar-brand img{
+    animation: animate__zoomIn;
+    animation-duration: 3s;
+  }

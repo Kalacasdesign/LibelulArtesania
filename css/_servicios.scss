@@ -1,0 +1,45 @@
+#servicios h3{
+    margin: 40px;
+}
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #333;
+  }
+  
+  .servicio {
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .servicio h4 {
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  .servicio p {
+    margin-bottom: 50px;
+    height: 194px;
+    font-size: 20px;
+  }
+  
+  .contenedor-servicios .violeta {
+      background: linear-gradient( rgba(216, 243, 129, 0.94),rgba(255, 255, 255, 0.9));
+      box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
+  }
+  
+  .ondas {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .icono {
+    float: right;
+  }

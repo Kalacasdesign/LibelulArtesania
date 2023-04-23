@@ -1,0 +1,72 @@
+@media screen and (max-width: 600px){
+  .contenedor{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  #features .left-column img{
+      width:100%;
+      margin-bottom: 30px;
+  }
+
+  #features .right-column img{
+    width: 12rem;
+    height: auto;
+    
+    
+  }
+
+  #features .right-column {
+    width: 100%;
+    text-align: center;
+    padding: 0 20px;
+    margin: 50px;
+}
+
+  #footer img{
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  }
+
+  .social-column{
+    margin: auto;
+  }
+
+  #footer .center-column{
+    margin: auto;
+  }
+
+  #footer .right-column{
+    margin: auto;
+  }
+
+
+  /* Servicios */
+
+  .contenedor-servicios {
+    flex-direction: column;
+}
+
+.contenedor-servicios .violeta{
+  height: 300px;
+  width: 100%;
+
+}
+
+
+
+
+}
+
+@media screen and (min-width:767px) and (max-width: 1023px){
+
+}
+
+
+
+@media screen and (min-width: 1024px){
+   
+} 

@@ -64,6 +64,11 @@ h3 {
     color: #333;
   }
 
+  .navbar-brand img{
+    animation: animate__zoomIn;
+    animation-duration: 3s;
+  }
+
   /* Sección Columnas (2) */
 #features {
     display: flex;
@@ -234,7 +239,7 @@ h3 {
   #footer img{
     width: 150px;
     height: 150px;
-    display: inline-block;
+    display: flex;
     margin: 0 0.5rem;
     animation: swing;
     animation-duration: 10s;
@@ -307,7 +312,9 @@ h3 {
     }
 
     #footer img{
-      margin-left: 150px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
     }
 
     .social-column{
